@@ -1,0 +1,51 @@
+/* This file only contains styles related to the intro elements */
+.intro{
+    text-align: center;
+    margin: 1rem;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 1%;
+    margin: 2% 5%;
+    border-radius: 2rem;
+}
+
+.intro > * {
+    margin: 0.5rem 0;
+}
+
+.intro-upper{
+    font-size: 3rem;
+}
+
+.intro-description{
+    color: gray;
+}
+
+.intro .credits{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.introductory-quote{
+    border-left: 2px solid gray;
+    padding-left: 1rem;
+    overflow: auto;
+}
+
+.quote{
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.quoter{
+    font-weight: 100;
+    text-align: right;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    height: fit-content;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+}

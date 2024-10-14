@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./stylesheets/general.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/intro.css">
+    <link rel="stylesheet" href="./stylesheets/books.css">
+</head>
+<body>
+    <div class="header">
+        <div class="top-header">
+            <p class="logo">Po Bidau Book Club</p>
+            <div class="header-profile">
+                <img src="./images/User-profile.jpg" alt="&#9950;" class="picture">
+                <p class="username">Jyu Viole Grace</p>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <!-- My library is kept empty -->
+            <button class="library">My Library</button>
+            <button class="guidelines">Our Guidelines</button>
+            <button class="notifications">Notifications</button>
+            <button class="personalization">Personalization</button>
+        </div>
+    </div>
+
+    <div class="intro">
+        <p class="intro-upper">Jyu Viole Grace's Book Collection</p>
+        <p class="intro-description">Personal library of Jyu Viole Grace, slayer candidate of FUG, enemy of Zahard.</p>
+        <p class="credits">Inspired by: <a rel="noopener noreferer" target="blank" href="https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95">Tower of God. Created by SIU.</a>&#x1F517;</p>
+    </div>
+
+    <div class="content">
+        <div class="add-book">
+            <b class="add-book-title">Add a book</b>
+            <form class="add-book-form" method="post">
+                <div>
+                    <label for="book-title">1.  Title: </label>
+                    <input type="text" name="book-title" id="book-title" class="book-title" placeholder="e.g. An Observation of the Inner Tower" required>
+                </div>
+
+                <div>
+                    <label for="book-author">2. Author: </label>
+                    <input type="text" name="book-author" id="book-author" class="book-author" placeholder="e.g. Po Bidau Dumas" required>
+                </div>
+
+                <fieldset name="genre" class="genre">
+                    <legend>3.  Genre:</legend>
+                    <div>
+                        <input type="radio" id="fiction" name="genre" value="fiction">
+                        <label for="fiction">i.  Fiction</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="non-fiction" name="genre" value="non-fiction">
+                        <label for="non-fiction">ii.  Non-fiction</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="literature" name="genre" value="literature">
+                        <label for="literature">iii. Literature</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="philosophy-and-ideology" name="genre" value="philosophy-and-ideology">
+                        <label for="philosophy-and-ideology">iv. Philosophy and Ideology</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="book-length">4. Number of pages:</label>
+                    <input type="number" id="book-length" class="book-length" name="book-length" min="1" placeholder="300">
+                </div>
+                <div>
+                    <label style="margin-bottom: 0.5rem;" for="book-summary">5.   Summary: </label>
+                    <textarea maxlength="1200" id="book-summary" class="book-summary" name="book-summary" placeholder="Write a summary in 1200 characters"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="clear">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="introductory-quote">
+            <div>
+                <p class="quote">
+                    We're the Po Bidau Family. Our greatest pride is our books which contain the truth passed down
+                    to us over the ages. We defend the truth, even if it means sacrificing ourselves in a 
+                    sea of blood. Our library's peace and calm must be protected at all costs. We burn the 
+                    lies to make the truth shine forth. That's our duty.
+                </p>
+                <p class="quoter">
+                    -His Eminence Po Bidau Gustang, the Aloof Wave
+                </p>
+            </div>
+        </div>
+
+        <table class="booklist">
+            <b class="booklist-title">My Books</b>
+            <thead>
+                <tr class="booklist-header">
+                    <th colspan="1" id="booklist-no">No.</th>
+                    <th colspan="1" id="booklist-title">Title</th>
+                    <th colspan="1" id="booklist-author">Author</th>
+                    <th colspan="1" id="booklist-genre">Genre</th>
+                    <th colspan="1" id="booklist-pages">Pages</th>
+                </tr>
+            </thead>
+            <!-- sample item -->
+            <tbody>
+                <tr class="book-entry-general">
+                    <td>1</td>
+                    <td>Cool book</td>
+                    <td>Great Author</td>
+                    <td>Philosophy and Ideology</td>
+                    <td>15</td>
+                </tr>
+                <tr><td class="book-entry-summary" colspan="5">Nice book. Lorem ipsum dolor sit amet.</td></tr>
+                <tr>
+                    <td class="book-entry-buttons" colspan="5">
+                        <button class="toggle-read-status">Read</button>
+                        <button class="remove-entry">X</button>
+                    </td>
+                </tr>
+            </tbody>
+            <!-- sample item ends -->
+        </table>
+    </div>
+
+    <p class="footer">Background image sourced from: 
+        <a rel="noopener noreferer" target="blank" href="https://www.vecteezy.com/vector-art/6174573-beautiful-blue-sky-background">
+            https://www.vecteezy.com/vector-art/6174573-beautiful-blue-sky-background
+        </a> &#x1F517;
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
